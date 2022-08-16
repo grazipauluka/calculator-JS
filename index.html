@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>        
+        <div class="container col-3 justify-content-center" id="myDiv">
+             <div class="row ">
+                 <div id="resultArea" value="0" class="col-10 rounded-pill"></div>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td onclick="reset()" class="grey rounded-circle">AC</td>
+                        <td onclick="del()" class="grey rounded-circle">DEL</td>
+                        <td onclick="percentage()" class="grey rounded-circle">%</td>
+                        <td onclick="input('/')" class="mostard rounded-circle">/</td>
+                    </tr>
+                    <tr>
+                        <td onclick="input(7)" class="numbers rounded-circle">7</td>
+                        <td onclick="input(8)" class="numbers rounded-circle">8</td>
+                        <td onclick="input(9)" class="numbers rounded-circle">9</td>
+                        <td onclick="input(' * ')" class="mostard rounded-circle">x</td>
+                    </tr>
+                    <tr>
+                        <td onclick="input(4)" class="numbers rounded-circle">4</td>
+                        <td onclick="input(5)" class="numbers rounded-circle">5</td>
+                        <td onclick="input(6)" class="numbers rounded-circle">6</td>
+                        <td onclick="input(' - ')" class="mostard rounded-circle">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick="input(1)" class="numbers rounded-circle">1</td>
+                        <td onclick="input(2)" class="numbers rounded-circle">2</td>
+                        <td onclick="input(3)" class="numbers rounded-circle">3</td>
+                        <td onclick="input(' + ')" class="mostard rounded-circle">+</td>
+                    </tr>
+                    <tr>
+                        <td onclick="input(0)" colspan="2" class="numbers rounded-pill">0</td>
+                        <td onclick="input('.')" class="numbers rounded-circle">.</td>
+                        <td onclick="calc()" class="mostard rounded-circle">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
