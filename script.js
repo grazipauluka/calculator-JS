@@ -16,7 +16,7 @@ function reset() {
     document.getElementById("resultArea").innerHTML = " ";
 }
 
-function del() {
+function deletLast() {
     let result = document.getElementById("resultArea").innerHTML;
     document.getElementById("resultArea").innerHTML = result.substring(
         0,
@@ -25,10 +25,8 @@ function del() {
 }
 
 function percentage() {
-    let num1 = document.getElementById("resultArea").innerHTML.value
-    let num2 = appendOperation();
-    let result = document.getElementById("resultArea").value = (num1 * 100) / num2 + "%";
-    document.getElementById("resultArea").innerHTML = eval(result)
-
+    let result = document.getElementById("resultArea").innerHTML;
+    console.log(result);
+    let myne = document.getElementById("resultArea").innerHTML = eval(result) / 100
 
 }
